@@ -1,0 +1,37 @@
+.upper-zone {
+    height: calc(var(--size) * 1.5);
+}
+
+.upper-zone div {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.upper-zone .p1{background-color: var(--p1);}
+.upper-zone .p2{background-color: var(--p2);}
+
+.upper-zone .active{transition: all ease-in-out 380ms;}
+
+.upper-zone .active.column-0 {margin-left: 0;}
+.upper-zone .active.column-1 {margin-left: 100px;}
+.upper-zone .active.column-2 {margin-left: 200px;}
+.upper-zone .active.column-3 {margin-left: 300px;}
+.upper-zone .active.column-4 {margin-left: 400px;}
+.upper-zone .active.column-5 {margin-left: 500px;}
+.upper-zone .active.column-6 {margin-left: 600px;}
+
+.upper-zone .active.row-0 {transform: translateY(150px);}
+.upper-zone .active.row-1 {transform: translateY(250px);}
+.upper-zone .active.row-2 {transform: translateY(350px);}
+.upper-zone .active.row-3 {transform: translateY(450px);}
+.upper-zone .active.row-4 {transform: translateY(550px);}
+.upper-zone .active.row-5 {transform: translateY(650px);}
+
+.upper-zone .active.active.column--.row-- {transition: none;}
+
+.upper-zone p{
+    display: grid;
+    place-content: center;
+}
